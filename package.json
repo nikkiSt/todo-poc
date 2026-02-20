@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.18.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-scripts": "5.0.1",
@@ -14,8 +15,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:error": "SHOW_CONSOLE_ERRORS=true react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.9"
   }
 }
